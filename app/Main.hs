@@ -83,10 +83,10 @@ telegramHost :: BS.ByteString
 telegramHost = "api.telegram.org"       
 
 updatesPath :: BS.ByteString            
-updatesPath = "/bot1753531412:AAFyVOSsM-CPqbZOj0BIpNxcixTxRJ1Ud-4/getUpdates?offset="
+updatesPath = "/bot[id]/getUpdates?offset="
 
 sendPath :: BS.ByteString               
-sendPath = "/bot1753531412:AAFyVOSsM-CPqbZOj0BIpNxcixTxRJ1Ud-4/sendMessage?chat_id="
+sendPath = "/bot[id]/sendMessage?chat_id="
 
 buildRequest :: BS.ByteString -> BS.ByteString -> Request
 buildRequest host path = setRequestMethod "GET"  
